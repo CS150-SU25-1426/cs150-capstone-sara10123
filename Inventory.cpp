@@ -51,7 +51,7 @@ bool Inventory::operator==(const Inventory& other) const {
 }
 
 ostream& operator << (ostream& os, const Inventory& item) {
-    os << "Item name: " << item.name << "\n"
+    os << "\nName: " << item.name << "\n"
     << "Category: " << item.category << "\n" 
     << "Quantity: " << item.quantity << "\n"
     << "Expiration Date: ";
@@ -59,7 +59,7 @@ ostream& operator << (ostream& os, const Inventory& item) {
     if (item.expirationDate != "")
     os << item.expirationDate << "\n"; 
     else
-    os << "No expiration date."; 
+    os << "No expiration date.\n"; 
 
     return os; 
 }
